@@ -1,0 +1,35 @@
+import { EditorTools } from '@progress/kendo-react-editor';
+
+export const editorTools = [
+  [EditorTools.Bold, EditorTools.Italic, EditorTools.Underline, EditorTools.Strikethrough],
+  [EditorTools.Subscript, EditorTools.Superscript],
+  EditorTools.ForeColor,
+  EditorTools.BackColor,
+  [EditorTools.CleanFormatting],
+  [
+    EditorTools.AlignLeft,
+    EditorTools.AlignCenter,
+    EditorTools.AlignRight,
+    EditorTools.AlignJustify,
+  ],
+  [EditorTools.Indent, EditorTools.Outdent],
+  [EditorTools.OrderedList, EditorTools.UnorderedList],
+  [EditorTools.NumberedList, EditorTools.BulletedList],
+  EditorTools.FontSize,
+  EditorTools.FontName,
+  EditorTools.FormatBlock,
+  [EditorTools.SelectAll],
+  [EditorTools.Undo, EditorTools.Redo],
+  [EditorTools.Link, EditorTools.Unlink, EditorTools.InsertImage, EditorTools.ViewHtml],
+  [EditorTools.InsertTable, EditorTools.InsertFile],
+  [EditorTools.Pdf, EditorTools.Print],
+  [EditorTools.TableProperties, EditorTools.TableCellProperties],
+  [
+    EditorTools.AddRowBefore,
+    EditorTools.AddRowAfter,
+    EditorTools.AddColumnBefore,
+    EditorTools.AddColumnAfter,
+  ],
+  [EditorTools.DeleteRow, EditorTools.DeleteColumn, EditorTools.DeleteTable],
+  [EditorTools.MergeCells, EditorTools.SplitCell],
+];

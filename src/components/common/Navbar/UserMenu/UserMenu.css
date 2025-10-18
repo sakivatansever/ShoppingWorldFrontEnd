@@ -1,0 +1,85 @@
+.userMenuUl {
+  font-family: "Nunito", sans-serif !important;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.userMenuUl li {
+  margin: 0 9px;
+}
+.userMenuUl li:hover {
+  cursor: pointer;
+  color: #84cef1;
+}
+.k-appbar-section {
+  display: flex;
+}
+.content li {
+  margin: 0;
+  padding: 6px 5px;
+}
+.content ul {
+  display: block;
+}
+.content {
+  padding: 4px 8px;
+}
+.user-menu-button {
+  padding: 0; /* düz buton için boşluk kontrolü */
+  background: transparent;
+  border: none;
+}
+
+.user-menu-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Avatar ve isim arası boşluk */
+}
+
+.user-name {
+  font-weight: 500;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .appbar-items,
+  .user-actions,
+  .k-avatar,
+  .k-appbar-separator {
+    display: none;
+  }
+  .overflow-button {
+    display: block;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .appbar-items,
+  .user-actions .k-badge-container,
+  .k-avatar,
+  .k-appbar-separator {
+    display: none;
+  }
+  .overflow-button {
+    display: block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .appbar-items,
+  .user-actions .k-badge-container,
+  .k-appbar-separator,
+  .k-avatar {
+    display: block;
+  }
+  .overflow-button {
+    display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}

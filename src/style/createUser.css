@@ -1,0 +1,58 @@
+.create-user-container {
+  display: block; 
+  min-height: unset;
+  background-color: transparent;
+  padding: 24px 32px;
+}
+
+.form-element {
+  display: block;
+  width: 100%;
+  max-width: none;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.create-user-title {
+  width: 100%;
+  max-width: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.form-row {
+  display: grid;                
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0px 20px;
+  width: 100%;
+}
+
+.form-item { width: 100%; }
+
+.form-item.email {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.form-item input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-buttons {
+  margin-top: 25px;
+}
+.submit-button {
+  margin-left: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .form-row { grid-template-columns: 1fr; }
+  .form-item.email { grid-column: auto; }
+}

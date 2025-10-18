@@ -1,0 +1,78 @@
+.k-scheduler .k-event.CSSLokasyon1  { background-color: #bfb1d5 !important;}
+.k-scheduler .k-event.CSSLokasyon2  { background-color: #f4858e !important;}
+.k-scheduler .k-event.CSSLokasyon3  { background-color: #bfe2ca !important;}
+.k-scheduler .k-event.CSSLokasyon4  { background-color: #a6daef !important;}
+.k-scheduler .k-event.CSSLokasyon5  { background-color: #d0e2ec !important;}
+.k-scheduler .k-event.CSSLokasyon6  { background-color: #fc9b7a !important;}
+.k-scheduler .k-event.CSSLokasyon7  { background-color: #fac8bf !important;}
+.k-scheduler .k-event.CSSLokasyon8  { background-color: #e1d6bf !important;}
+.k-scheduler .k-event.CSSLokasyon9  { background-color: #f4f4bf !important;}
+.k-scheduler .k-event.CSSLokasyon10 { background-color: #8f8d8e !important;}
+.k-scheduler .k-event.CSSLokasyon11 { background-color: #558C89 !important;}
+.k-scheduler .k-event.CSSLokasyon12 { background-color: #74AFAD !important;}
+.k-scheduler .k-event.CSSLokasyon13 { background-color: #f4a13e !important;}
+.k-scheduler .k-event.CSSLokasyon14 { background-color: #527bbc !important;}
+.k-scheduler .k-event.CSSLokasyon15 { background-color: #bdc3c7 !important;}
+.k-scheduler .k-event.CSSLokasyon16 { background-color: #ffffff !important;}
+.k-scheduler .k-event.CSSLokasyon17 { background-color: #cad94f !important;}
+.k-scheduler .k-event.CSSLokasyon18 { background-color: #4bacff !important;}
+.k-scheduler .k-event.CSSLokasyon19 { background-color: #a56f99 !important;}
+.k-scheduler .k-event.CSSLokasyon20 { background-color: #f1d300 !important;}
+/* Status'a göre sol çubuğu renklendirme */
+.k-scheduler .k-event.CSSStatus1 {
+  border-left: 8px solid #c0242b !important; 
+}
+
+.k-scheduler .k-event.CSSStatus2 {
+  border-left: 8px solid #c87fff  !important;
+}
+
+.k-scheduler .k-event.CSSStatus3 {
+  border-left: 8px solid #7fd0ff !important;
+}
+
+.k-scheduler .k-event.CSSStatus4 {
+  border-left: 8px solid #f7be68 !important;
+}
+
+.k-scheduler .k-event.CSSStatus5 {
+  border-left: 8px solid #27ae60 !important;
+}
+
+.k-scheduler .k-event.CSSStatus6 {
+  border-left: 8px solid #28328b !important;
+}
+
+.k-scheduler .k-event.CSSStatus7 {
+  border-left: 8px solid #000000 !important;
+}
+
+.k-scheduler .k-event.CSSStatus8 {
+  border-left: 8px solid #2b533c !important;
+}
+
+.k-scheduler .k-event.CSSStatus9 {
+  border-left: 8px solid #522b09 !important;
+}
+
+.k-scheduler .k-event.CSSStatus10 {
+  border-left: 8px solid #1d2c3b !important;
+}
+
+/* Default status */
+.k-scheduler .k-event.CSSStatusDefault {
+  background-color: #bfb1d5 !important;
+  border-left: 8px solid #b152c2 !important;
+}
+
+.day-event-item.CSSStatus1  .day-event-color { background-color: #c0242b !important; }
+.day-event-item.CSSStatus2  .day-event-color { background-color: #c87fff !important; }
+.day-event-item.CSSStatus3  .day-event-color { background-color: #7fd0ff !important; }
+.day-event-item.CSSStatus4  .day-event-color { background-color: #f7be68 !important; }
+.day-event-item.CSSStatus5  .day-event-color { background-color: #27ae60 !important; }
+.day-event-item.CSSStatus6  .day-event-color { background-color: #28328b !important; }
+.day-event-item.CSSStatus7  .day-event-color { background-color: #000000 !important; }
+.day-event-item.CSSStatus8  .day-event-color { background-color: #2b533c !important; }
+.day-event-item.CSSStatus9  .day-event-color { background-color: #522b09 !important; }
+.day-event-item.CSSStatus10 .day-event-color { background-color: #1d2c3b !important; }
+.day-event-item.CSSStatusDefault .day-event-color { background-color: #b152c2 !important; }

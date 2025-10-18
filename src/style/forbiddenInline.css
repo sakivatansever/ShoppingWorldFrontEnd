@@ -1,0 +1,136 @@
+:root {
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --surface: #ffffff;
+  --primary: #6d28d9; /* mor */
+  --primary-ghost: #ede9fe;
+  /* gölgeyi yumuşattım */
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --surface: #0f172a;
+    /* dark için de daha hafif gölge */
+    --shadow: 0 6px 16px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.forbidden {
+  background: transparent;
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forbidden__card {
+  width: min(680px, 92vw);
+  background: #f5effd;
+  color: var(--fg);
+  border-radius: 16px;
+  box-shadow: var(--shadow); /* daha hafif */
+  padding: 28px 28px 24px;
+  text-align: center;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  animation: pop 180ms ease-out;
+}
+
+@keyframes pop {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.forbidden__iconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  background: #d6c1f9;
+}
+
+.forbidden__icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--primary);
+}
+
+.forbidden__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 6px 0;
+  color: #49454f;
+}
+
+.forbidden__text {
+  margin: 0 auto 20px;
+  max-width: 46ch;
+  color: #49454f;
+  line-height: 1.55;
+}
+
+.forbidden__actions {
+  margin-top: 12px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 120ms ease, filter 120ms ease;
+  background-color: #d6c1f9;
+  border: none;
+  color: #49454f;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  filter: brightness(1.05);
+}
+
+/* ————— MOBILE İYİLEŞTİRMELER ————— */
+@media (max-width: 640px) {
+  .forbidden {
+    padding: 20px 12px;
+  } /* dikeyde biraz daha kompakt */
+  .forbidden__card {
+    width: min(680px, 95vw);
+    padding: 20px 16px; /* daha küçük padding */
+    border-radius: 12px; /* mobilde daha yumuşak */
+  }
+  .forbidden__iconWrap {
+    width: 56px;
+    height: 56px;
+  }
+  .forbidden__icon {
+    width: 24px;
+    height: 24px;
+  }
+  .forbidden__title {
+    font-size: 20px;
+  }
+  .forbidden__text {
+    font-size: 13.5px;
+    margin-bottom: 16px;
+  }
+  .btn {
+    padding: 12px 16px;
+    font-size: 13.5px;
+  } /* daha geniş dokunma alanı */
+}
