@@ -18,6 +18,13 @@ import userDropDownListSlice from "./user/userDropDownList";
 import notificationSlice from "./notification/notificationSlice";
 import districtSlice from "./district/districtSlice";
 import locationSlice from "./location/locationSlice";
+import orderSlice from "./order/orderSlice";
+import productSlice from "./product/productSlice";
+import categorySlice from "./category/categorySlice";
+import couponSlice from "./coupon/couponSlice";
+import customerSlice from "./customer/customerSlice";
+import courierSlice from "./courier/courierSlice";
+import dashboardSlice from "./dashboard/dashboardSlice";
 
 // const rootPersistConfig = {
 //   key: "root",
@@ -46,6 +53,13 @@ const rootReducer = combineReducers({
   userDropdownList: userDropDownListSlice,
   districtList: districtSlice,
   locationList: locationSlice,
+  order: orderSlice,
+  product: productSlice,
+  category: categorySlice,
+  coupon: couponSlice,
+  customer: customerSlice,
+  courier: courierSlice,
+  dashboard: dashboardSlice,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

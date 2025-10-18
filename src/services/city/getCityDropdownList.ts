@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { axiosErrorHandler } from "../../utils/index";
-import { IDataListResult } from "../../interface/dataListResult";
+import { IDataListResult } from "../../interface/DataListResult";
 import { RootState } from "../../store";
 import { IDropDownList } from "../../interface/dropdownList";
 

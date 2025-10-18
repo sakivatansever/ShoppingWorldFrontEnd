@@ -19,6 +19,13 @@ import RequirePermission from "../components/Auth/RequirePermission";
 const Login = lazy(() => import("../pages/Login"));
 const ForgotPassword = lazy(() => import("../pages/ForgotPassword"));
 const ResetPassword = lazy(() => import("../pages/ResetPassword"));
+const Dashboard = lazy(() => import("../pages/Dashboard"));
+const Orders = lazy(() => import("../pages/Orders"));
+const Products = lazy(() => import("../pages/Products"));
+const Categories = lazy(() => import("../pages/Categories"));
+const Coupons = lazy(() => import("../pages/Coupons"));
+const Customers = lazy(() => import("../pages/Customers"));
+const Couriers = lazy(() => import("../pages/Couriers"));
 
 const router = createBrowserRouter([
   {
@@ -43,7 +50,63 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/createUser" replace />,
+        element: <Navigate to="/dashboard" replace />,
+      },
+      {
+        path: "dashboard",
+        element: (
+          <PageSuspenseFallback>
+            <Dashboard />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "orders",
+        element: (
+          <PageSuspenseFallback>
+            <Orders />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "products",
+        element: (
+          <PageSuspenseFallback>
+            <Products />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "categories",
+        element: (
+          <PageSuspenseFallback>
+            <Categories />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "coupons",
+        element: (
+          <PageSuspenseFallback>
+            <Coupons />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "customers",
+        element: (
+          <PageSuspenseFallback>
+            <Customers />
+          </PageSuspenseFallback>
+        ),
+      },
+      {
+        path: "couriers",
+        element: (
+          <PageSuspenseFallback>
+            <Couriers />
+          </PageSuspenseFallback>
+        ),
       },
       {
         path: "createUser",

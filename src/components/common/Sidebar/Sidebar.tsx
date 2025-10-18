@@ -39,11 +39,46 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   }, []);
 
   const items = [
+    {
+      text: "Dashboard",
+      icon: "chart-line-markers",
+      route: "/dashboard",
+    },
+    {
+      text: "Siparişler",
+      icon: "cart",
+      route: "/orders",
+    },
+    {
+      text: "Ürünler",
+      icon: "product",
+      route: "/products",
+    },
+    {
+      text: "Kategoriler",
+      icon: "categorize",
+      route: "/categories",
+    },
+    {
+      text: "Kuponlar",
+      icon: "ticket",
+      route: "/coupons",
+    },
+    {
+      text: "Müşteriler",
+      icon: "user",
+      route: "/customers",
+    },
+    {
+      text: "Kuryeler",
+      icon: "track-changes-enable",
+      route: "/couriers",
+    },
     ...(canCreateUser
       ? [
           {
             text: "Kullanıcı Ekle",
-            icon: "user",
+            icon: "user-add",
             route: "/createUser",
           },
         ]
